@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>عيادة التغذية والنمو للدكتورة شيماء الحسيني</title>
+<style>
+:root{--navy:#102a43;--green:#2f7d5b;--mint:#eaf5ef;--cream:#f8f6f0;--text:#243447;--muted:#6b7c8f;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;background:var(--cream);color:var(--text)}
+header{position:sticky;top:0;z-index:5;background:rgba(248,246,240,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e5e2d9}
+.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy)}.logo{width:44px;height:44px;border-radius:14px;background:var(--navy);color:#b9e2c9;display:grid;place-items:center;font-size:24px}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav a{color:var(--text);text-decoration:none;padding:9px 12px;border-radius:10px;font-size:14px}nav a:hover{background:var(--mint)}
+.btn{display:inline-block;border:0;border-radius:14px;padding:12px 18px;font-weight:800;cursor:pointer;text-decoration:none}
+.primary{background:var(--green);color:white}.secondary{background:var(--navy);color:white}.light{background:var(--mint);color:var(--green)}
+main{max-width:1100px;margin:auto;padding:0 20px}
+.hero{padding:75px 0 55px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+.badge{display:inline-block;background:var(--mint);color:var(--green);padding:8px 12px;border-radius:999px;font-weight:800;font-size:13px}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.12;color:var(--navy);margin:16px 0}
+h2{font-size:32px;color:var(--navy);margin:0 0 12px}.lead{font-size:18px;line-height:1.9;color:var(--muted)}
+.hero-card{background:var(--navy);border-radius:30px;padding:32px;color:white;box-shadow:0 18px 45px #102a4322}
+.hero-card .big{font-size:60px}.hero-card h3{font-size:25px;margin:12px 0}.hero-card p{line-height:1.8;color:#d8e5ec}
+section{padding:55px 0}.section-head{margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid #ebe7dd;border-radius:22px;padding:24px;box-shadow:0 8px 24px #102a4308}
+.icon{font-size:30px}.card h3{margin:12px 0 8px;color:var(--navy)}.card p{color:var(--muted);line-height:1.75}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:25px;align-items:stretch}.quote{background:var(--green);color:white;border-radius:25px;padding:30px;font-size:21px;line-height:1.8}
+.plans .card{display:flex;flex-direction:column}.price{font-size:27px;color:var(--green);font-weight:900;margin:10px 0 16px}
+form{display:grid;gap:12px;max-width:650px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+input,textarea,select{width:100%;border:1px solid #ddd8cc;border-radius:13px;padding:13px;font:inherit;background:white}textarea{min-height:120px;resize:vertical}
+footer{margin-top:35px;background:var(--navy);color:#dce8ed;padding:35px 20px;text-align:center;line-height:1.8}
+#admin{display:none}.adminbox{background:white;border-radius:22px;padding:24px;border:1px solid #e5e1d8}.req{border:1px solid #e7e2d8;border-radius:15px;padding:15px;margin:10px 0}
+.modal{display:none;position:fixed;inset:0;background:#102a4388;z-index:20;place-items:center;padding:20px}.modal>div{background:white;border-radius:22px;padding:25px;width:min(430px,100%)}
+@media(max-width:800px){.hero,.about{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}nav{display:none}.nav{padding:10px 15px}.hero{padding-top:45px}h1{font-size:40px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<div class="brand"><div class="logo">🌿</div><div>عيادة التغذية والنمو<br><small>د. شيماء الحسيني</small></div></div>
+<nav><a href="#home">الرئيسية</a><a href="#about">عن الدكتورة</a><a href="#services">خدماتنا</a><a href="#plans">خطط التغذية</a><a href="#booking">حجز موعد</a><a href="#contact">التواصل</a></nav>
+<button class="btn secondary" onclick="openLogin()">تسجيل الدخول</button>
+</div></header>
+
+<main>
+<section id="home" class="hero">
+<div>
+<span class="badge">رعاية تغذوية ونمو صحي</span>
+<h1>معاً نحو تغذية متوازنة ونمو صحي 🌱</h1>
+<p class="lead">عيادة التغذية والنمو للدكتورة شيماء الحسيني — متابعة غذائية ونموية بطريقة منظمة ومريحة للعائلة.</p>
+<a class="btn primary" href="#booking">احجزي موعدچ</a>
+<a class="btn light" href="#services">اكتشفي خدماتنا</a>
+</div>
+<div class="hero-card"><div class="big">🌿</div><h3>اهتمام مخصص لكل مريض</h3><p>خطط غذائية، متابعة النمو، واستشارات تغذوية ضمن تجربة رقمية بسيطة.</p></div>
+</section>
+
+<section id="services"><div class="section-head"><h2>خدماتنا</h2><p class="lead">كل ما تحتاجه المتابعة التغذوية في مكان واحد.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">📈</div><h3>متابعة النمو للأطفال</h3><p>متابعة مؤشرات النمو وتقديم إرشادات غذائية مناسبة.</p></div>
+<div class="card"><div class="icon">🥗</div><h3>خطط غذائية مخصصة</h3><p>خطط منظمة حسب احتياجات الحالة وأهداف المتابعة.</p></div>
+<div class="card"><div class="icon">💬</div><h3>استشارات تغذوية</h3><p>إرشادات واضحة تساعد العائلة على اتخاذ خيارات غذائية أفضل.</p></div>
+</div></section>
+
+<section id="about"><div class="about">
+<div class="quote">"هدفنا مو بس خطة غذائية، هدفنا نبني عادات صحية تستمر." 🌱</div>
+<div class="card"><h2>عن الدكتورة</h2><p class="lead">الدكتورة شيماء الحسيني تهتم بمجال التغذية والنمو وتقديم متابعة منظمة للمرضى والعائلات.</p><p class="lead">من خلال الموقع تگدرين تحجزين موعد، تتابعين ملفچ، وتشوفين خطط التغذية والمعلومات الخاصة بالعيادة.</p></div>
+</div></section>
+
+<section id="plans" class="plans"><div class="section-head"><h2>خطط التغذية</h2><p class="lead">نماذج توضيحية للخطط المتاحة.</p></div>
+<div class="grid">
+<div class="card"><h3>خطة متابعة</h3><p>متابعة دورية وإرشادات غذائية.</p><div class="price">حسب الحالة</div><a class="btn light" href="#booking">طلب موعد</a></div>
+
+<div class="card"><h3>استشارة</h3><p>جلسة استشارية لتقييم الاحتياجات.</p><div class="price">حسب الحالة</div><a class="btn light" href="#booking">طلب موعد</a></div>
+</div></section>
+
+<section id="booking"><div class="section-head"><h2>حجز موعد</h2><p class="lead">املئي البيانات، وراح ينحفظ طلب الموعد بهذا النموذج التجريبي.</p></div>
+<form id="bookingForm">
+<div class="row"><input id="name" required placeholder="اسم المريض"><input id="phone" required placeholder="رقم الهاتف"></div>
+<div class="row"><input id="date" required type="date"><input id="time" required type="time"></div>
+<select id="service"><option>متابعة النمو</option><option>خطة غذائية</option><option>استشارة تغذوية</option></select>
+<textarea id="note" placeholder="ملاحظات إضافية (اختياري)"></textarea>
+<button class="btn primary" type="submit">إرسال طلب الموعد</button>
+</form></section>
+
+<section id="contact"><div class="card"><h2>التواصل</h2><p class="lead">هنا نضيف لاحقاً رقم الهاتف، واتساب، العنوان، وحسابات التواصل الرسمية للعيادة.</p></div></section>
+
+<section id="admin"><div class="section-head"><h2>لوحة الإدارة</h2><p class="lead">طلبات المواعيد المحفوظة على هذا الجهاز.</p></div><div class="adminbox"><div id="requests"></div><button class="btn light" onclick="clearRequests()">مسح الطلبات التجريبية</button></div></section>
+</main>
+
+<footer>عيادة التغذية والنمو للدكتورة شيماء الحسيني<br>نسخة أولية للتجربة — سيتم ربط قاعدة البيانات وتسجيل الدخول الحقيقي عند النشر.</footer>
+
+<div class="modal" id="loginModal"><div><h2>تسجيل الدخول</h2><p>حساب الإدارة المخصص: <b>doodyx62@gmail.com</b></p>
+<input id="email" type="email" placeholder="البريد الإلكتروني"><br><br>
+<input id="password" type="password" placeholder="كلمة المرور"><br><br>
+<button class="btn primary" onclick="login()">دخول</button>
+<button class="btn light" onclick="closeLogin()">إلغاء</button>
+<p id="loginMsg"></p></div></div>
+
+<script>
+const ADMIN="doodyx62@gmail.com";
+function openLogin(){document.getElementById('loginModal').style.display='grid'}
+function closeLogin(){document.getElementById('loginModal').style.display='none'}
+function login(){
+ const e=document.getElementById('email').value.trim();
+ if(e.toLowerCase()===ADMIN.toLowerCase()){
+   closeLogin(); document.getElementById('admin').style.display='block'; location.hash='admin'; render();
+ } else document.getElementById('loginMsg').textContent='هذا البريد غير مخصص للإدارة في النسخة التجريبية.';
+}
+document.getElementById('bookingForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const a=JSON.parse(localStorage.getItem('clinic_requests')||'[]');
+ a.push({name:name.value,phone:phone.value,date:date.value,time:time.value,service:service.value,note:note.value});
+ localStorage.setItem('clinic_requests',JSON.stringify(a)); e.target.reset();
+ alert('تم حفظ طلب الموعد بالتجربة 🌿');
+});
+function render(){
+ const a=JSON.parse(localStorage.getItem('clinic_requests')||'[]'), box=document.getElementById('requests');
+ box.innerHTML=a.length?a.map((x,i)=>`<div class="req"><b>${i+1}. ${x.name}</b><br>📞 ${x.phone}<br>📅 ${x.date} — ${x.time}<br>🌿 ${x.service}<br>${x.note||''}</div>`).join(''):'لا توجد طلبات حالياً.';
+}
+function clearRequests(){localStorage.removeItem('clinic_requests');render()}
+</script>
+</body></html>
